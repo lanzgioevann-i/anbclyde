@@ -78,6 +78,17 @@ body{
 	padding:0 !important;
 }
 
+.nav-center ul {
+    text-align: center;
+}
+.nav-center ul li {
+    display: inline;
+    float: none;
+}
+.nav-center ul li a {
+    display: inline-block;
+}
+
 /************* 
 	HEADER 
 *************/
@@ -403,6 +414,7 @@ body{
 	margin: 0 !important;
 }
 .ig-feed-pic img{
+   overflow:hidden;
 	width: 100% !important;
 	height: auto !important;
 }

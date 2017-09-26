@@ -5,7 +5,6 @@ function navstick(){
 	
 	if(window_top > 0){ 
 		$('#navbar-main').addClass('stick');
-		//$('#navbar-main').addClass('z-depth-1');
 		$('#navbar-main').removeClass('z-depth-0');
 		
 		//links
@@ -18,7 +17,6 @@ function navstick(){
 	}
 	else{
 		$('#navbar-main').removeClass('stick');
-		//$('#navbar-main').removeClass('z-depth-1');
 		$('#navbar-main').addClass('z-depth-0');
 		
 		//links

@@ -34,19 +34,22 @@
 	<body>
 		<header>
 			<!-- NAV BAR -->
+			<!-- NAV BAR -->
 			<nav id="navbar-main" class="z-depth-0">
 				<div class="nav-wrapper" style="margin: 0 auto; width: 90%;">
 					
 					<!-- tablet above -->
 					<div class="hide-on-small-only hide-on-below-800px">
-						<a href="#ss-first" id="navbar-main-logo" class="brand-logo grey-text left">Above and Beyond</a>
-						<ul id="nav-mobile" class="right hide-on-small-only">
+						<a href="#ss-first" id="navbar-main-logo" class="brand-logo grey-text hide">Above and Beyond</a>
+						
+						<div class="nav-center">
+						<ul id="nav-mobile" class="hide-on-small-only">
 							<li><a href="#ss-first" class="navbar-main-links white-text">HOME</a></li>
 							<li><a href="#ss-third" class="navbar-main-links white-text">PORTFOLIO</a></li>
 							<li><a href="#" class="navbar-main-links white-text">PRICING</a></li>
 							<li><a href="#ss-contact" class="navbar-main-links white-text">CONTACT US</a></li>
 						</ul>
-						
+						</div>
 					</div>
 				
 					<!-- small devices -->
@@ -146,9 +149,28 @@
 				<h4 class="center">Pictures</h4>
 				<p class="container center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus et metus sollicitudin, egestas ipsum eget, aliquet lectus. Praesent et velit ac ligula aliquet egestas ut eu est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus hendrerit varius. Suspendisse consequat dictum dui, nec elementum metus commodo.</p>
 				
+				
+			
 				<ul class="row">
 					<div id="instafeed"></div>
 				</ul>
+				
+				<!--
+				<script type="text/javascript">
+					var userFeed = new Instafeed({
+						get: 'user',
+						userId: '441261446',
+						clientId: ' 2ef18e5db3644483ad67c22cd212d13e',
+						accessToken: '441261446.2ef18e5.6088c146db284029b022af658bc25e89',
+						resolution: 'standard_resolution',
+						template: '<div class="s3 ig-image" style="background-image:url("{{image}}");"></div>',
+						sortBy: 'most-recent',
+						limit: 4,
+						links: false
+					});
+					userFeed.run();
+				</script>
+				-->
 				
 				<script type="text/javascript">
 					var userFeed = new Instafeed({
@@ -157,8 +179,8 @@
 						clientId: ' 2ef18e5db3644483ad67c22cd212d13e',
 						accessToken: '441261446.2ef18e5.6088c146db284029b022af658bc25e89',
 						resolution: 'standard_resolution',
-						template: '<li class="col s3 ig-feed-pic"><a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" alt="view in instagram"/></a></li>',
-						sortBy: 'most-recent',
+						template: '<li class="col s3 ig-feed-pic"><a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" class="responsive-img" alt="view in instagram"/></a></li>',
+						sortBy: 'most-liked',
 						limit: 4,
 						links: false
 					});
@@ -171,7 +193,6 @@
 					<!-- MAX 10 LETTER PER WORDS -->
 					<div class="col s12 m4 l3 port-img port-img-1 port-img-hide" id="">
 						<a class="port-img-hover center"><span class=""><p>Portrait</p></span></a>
-						
 					</div>
 					
 					<div class="col s12 m4 l3 port-img port-img-2 port-img-hide" id="">
@@ -288,7 +309,7 @@
 				
 				<div class="hide-on-large-only">
 					<div class="row container">
-						<div class="col s12 m8 l8 offset-l2 center">
+						<div class="col s12 m10 offset-m1 l8 offset-l2 center">
 						
 							<iframe src="https://www.youtube.com/embed/XPeYWdACEco" frameborder="0" allowfullscreen id="port-video1" class=""></iframe>
 							<br>
