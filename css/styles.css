@@ -27,7 +27,7 @@ body{
 	position: fixed;
 	padding-top: 20px;
 	margin-top: -1px;
-	z-index: 10000;
+	z-index: 1000;
 	height: 100px !important;
 	
 	-webkit-transition: 0.3s all ease-out;
@@ -432,17 +432,6 @@ body{
 	height: auto !important;
 }
 
-div.polaroid {
-  width: 80%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-
-div.text-container {
-  text-align: center;
-  padding: 10px 20px;
-}
 
 /***************
    GOOGLE MAPS

@@ -302,6 +302,7 @@ $(document).ready(function(){
 	);
 	$('.slider').slider();
 	$('.carousel').carousel();
+	$('.modal').modal();
 });
 
 /* HEADER */
