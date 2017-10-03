@@ -1,4 +1,5 @@
 /* NAV BAR */
+var navlinkanimated = 0;
 function navstick(){
 	//nav show
 	var window_top = $(window).scrollTop();
@@ -13,6 +14,15 @@ function navstick(){
 		$('.navbar-main-links').removeClass('white-text');
 		
 		//up down animation
+		if(navlinkanimated == 0){
+			$('#nav-links').addClass('go-up');
+			setTimeout(function() {
+				$('#nav-links').removeClass('go-up');
+				$('#nav-links').removeClass('right');
+				$('#nav-links').addClass('nav-center');
+				navlinkanimated = 1;
+			}, 500);
+		}
 		
 	}
 	else{
@@ -25,6 +35,13 @@ function navstick(){
 		$('.navbar-main-links').removeClass('grey-text');
 		
 		//up down animation
+		navlinkanimated = 0;
+		$('#nav-links').addClass('go-up');
+		setTimeout(function() {
+			$('#nav-links').removeClass('go-up');
+			$('#nav-links').removeClass('nav-center');
+			$('#nav-links').addClass('right');
+		}, 500);
 	}
 }
 
