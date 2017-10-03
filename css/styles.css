@@ -89,6 +89,19 @@ body{
     display: inline-block;
 }
 
+#nav-links{
+	margin-top: -1px;
+	
+	-webkit-transition: 0.2s all ease-out;
+    -moz-transition: 0.2s all ease-out;
+    transition: 0.2s all ease-out;
+}
+
+#nav-links.go-up {
+	margin-top: -70px;
+}
+
+
 /************* 
 	HEADER 
 *************/
@@ -417,6 +430,18 @@ body{
    overflow:hidden;
 	width: 100% !important;
 	height: auto !important;
+}
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.text-container {
+  text-align: center;
+  padding: 10px 20px;
 }
 
 /***************

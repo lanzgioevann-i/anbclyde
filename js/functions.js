@@ -12,7 +12,7 @@ function navstick(){
 		$('.navbar-main-links').addClass('grey-text');
 		$('.navbar-main-links').removeClass('white-text');
 		
-		//small
+		//up down animation
 		
 	}
 	else{
@@ -24,7 +24,7 @@ function navstick(){
 		$('.navbar-main-links').addClass('white-text');
 		$('.navbar-main-links').removeClass('grey-text');
 		
-		//small
+		//up down animation
 	}
 }
 

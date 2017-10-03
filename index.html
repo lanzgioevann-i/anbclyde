@@ -42,14 +42,16 @@
 					<div class="hide-on-small-only hide-on-below-800px">
 						<a href="#ss-first" id="navbar-main-logo" class="brand-logo grey-text hide">Above and Beyond</a>
 						
-						<div class="nav-center">
-						<ul id="nav-mobile" class="hide-on-small-only">
-							<li><a href="#ss-first" class="navbar-main-links white-text">HOME</a></li>
-							<li><a href="#ss-third" class="navbar-main-links white-text">PORTFOLIO</a></li>
-							<li><a href="#" class="navbar-main-links white-text">PRICING</a></li>
-							<li><a href="#ss-contact" class="navbar-main-links white-text">CONTACT US</a></li>
-						</ul>
+						<div id="nav-links" class="right">
+							<ul id="nav-mobile" class="hide-on-small-only">
+								<li><a href="#ss-first" class="navbar-main-links white-text">HOME</a></li>
+								<li><a href="#ss-second" class="navbar-main-links white-text">PORTFOLIO</a></li>
+								<li><a href="#" class="navbar-main-links white-text">PRICING</a></li>
+								<li><a href="#ss-contact" class="navbar-main-links white-text">CONTACT US</a></li>
+							</ul>
 						</div>
+						
+						
 					</div>
 				
 					<!-- small devices -->
@@ -58,7 +60,7 @@
 						<!-- Dropdown Works -->
 						<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile white">
 							<li><a href="#ss-first" class="grey-text">HOME</a></li>
-							<li><a href="#ss-third" class="grey-text">PORTFOLIO</a></li>
+							<li><a href="#ss-second" class="grey-text">PORTFOLIO</a></li>
 							<li><a href="#" class="grey-text">PRICING</a></li>
 							<li><a href="#ss-contact" class="grey-text">CONTACT US</a></li>
 						</ul>
@@ -87,12 +89,13 @@
 					</div>
 				</nav>
 			</div>
+			
+			
 			<!-- HEADER -->
 			<div id="header-container">
 				<div class="scrollspy" id="ss-first">
 					<div class="header center-align">
 						<div class="container">
-							
 							<div class="go-down-link center hide-on-small-only">
 								<h1><a href="#ss-second" class="white-text"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></h1>
 							</div>
@@ -149,13 +152,13 @@
 				<h4 class="center">Pictures</h4>
 				<p class="container center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus et metus sollicitudin, egestas ipsum eget, aliquet lectus. Praesent et velit ac ligula aliquet egestas ut eu est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus hendrerit varius. Suspendisse consequat dictum dui, nec elementum metus commodo.</p>
 				
-				
-			
-				<ul class="row">
+				<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/0ef80773d7525b69b3035bad5aca0ee6.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+			<!--
+				<div class="row">
 					<div id="instafeed"></div>
-				</ul>
+				</div>
 				
-				<!--
 				<script type="text/javascript">
 					var userFeed = new Instafeed({
 						get: 'user',
@@ -163,14 +166,13 @@
 						clientId: ' 2ef18e5db3644483ad67c22cd212d13e',
 						accessToken: '441261446.2ef18e5.6088c146db284029b022af658bc25e89',
 						resolution: 'standard_resolution',
-						template: '<div class="s3 ig-image" style="background-image:url("{{image}}");"></div>',
-						sortBy: 'most-recent',
+						template: '<div class="col s3 polaroid"><img src="{{image}}" class="responsive-img" alt="view in instagram"/><div class="text-container">test</div></div>',
+						sortBy: 'most-liked',
 						limit: 4,
 						links: false
 					});
 					userFeed.run();
 				</script>
-				-->
 				
 				<script type="text/javascript">
 					var userFeed = new Instafeed({
@@ -186,8 +188,7 @@
 					});
 					userFeed.run();
 				</script>
-				
-				<br>
+				-->
 				
 				<div class="row" style="width: 90%;">
 					<!-- MAX 10 LETTER PER WORDS -->
