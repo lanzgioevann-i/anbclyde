@@ -1,3 +1,10 @@
+/* LOAD */
+$(window).load(function() {
+	$(window).scrollTop($(window).scrollTop() + 1);
+	$(window).scrollTop($(window).scrollTop() - 1);
+});
+
+
 /* NAV BAR */
 var navlinkanimated = 0;
 function navstick(){

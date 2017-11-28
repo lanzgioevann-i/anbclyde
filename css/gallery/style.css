@@ -198,6 +198,14 @@ a {
   font-style: normal;
 }
 
+/* Font Awesome */
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../../fonts/FontAwesome.otf') format('opentype'); /* IE9 Compat Modes */
+	src: url('../../fonts/FontAwesome.otf?#iefix') format('opentype'), /* IE6-IE8 */
+		 url('../../fonts/fontawesome-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
 /* Gamma Gallery Style */
 
 .gamma-container {
@@ -432,11 +440,13 @@ button.gamma-btn-sspause:before {
 }
 
 .gamma-nav span.gamma-prev:before {
-	content: '\e75d';
+	font-family: FontAwesome;
+	content: '\f104';
 }
 
 .gamma-nav span.gamma-next:before {
-	content: '\e75e';
+	font-family: FontAwesome;
+	content: '\f105';
 }
 
 .gamma-img-fly {
@@ -449,11 +459,11 @@ button.gamma-btn-sspause:before {
 /* Loaders */
 
 .gamma-loading {
-	background: transparent url(../../img/gallery/loader_light.gif) no-repeat center center;
+	background: transparent url(../../img/loader_light.gif) no-repeat center center;
 }
 
 .gamma-single-view.gamma-loading {
-	background: transparent url(../../img/gallery/loader_dark.gif) no-repeat center center;
+	background: transparent url(../../img/loader_dark.gif) no-repeat center center;
 }
 
 

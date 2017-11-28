@@ -32,11 +32,14 @@
 					
 					<!-- tablet above -->
 					<div class="hide-on-small-only hide-on-below-800px">
-						<a href="index.html" id="navbar-main-logo" class="brand-logo grey-text hide">Above and Beyond</a>
+						<a href="#ss-first" id="navbar-main-logo" class="brand-logo grey-text hide">Above and Beyond</a>
 						
 						<div id="nav-links" class="right">
 							<ul id="nav-mobile" class="hide-on-small-only">
 								<li><a href="index.html" class="navbar-main-links white-text" target="_parent">HOME</a></li>
+								<li><a href="gallery-engagements.html" class="navbar-main-links white-text" target="_parent">ENGAGEMENTS</a></li>
+								<li><a href="gallery-weddings.html" class="navbar-main-links white-text" target="_parent">WEDDINGS</a></li>
+								<li><a href="gallery-casuals.html" class="navbar-main-links white-text" target="_parent">CASUAL SHOOTS</a></li>
 							</ul>
 						</div>
 						
@@ -45,13 +48,20 @@
 				
 					<!-- small devices -->
 					<div class="hide-on-med-and-up show-on-above-800px">
-						<a href="index.html" id="" class="brand-logo grey-text left">logo</a>
+						<a href="#ss-first" id="" class="brand-logo grey-text left">logo</a>
+						<!-- Dropdown Works -->
+						<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile white">
+							<li><a href="index.html" class="grey-text" target="_parent">HOME</a></li>
+							<li><a href="gallery-engagements.html" class="grey-text" target="_parent">ENGAGEMENTS</a></li>
+							<li><a href="gallery-weddings.html" class="grey-text" target="_parent">WEDDINGS</a></li>
+							<li><a href="gallery-casuals.html" class="grey-text" target="_parent">CASUAL SHOOTS</a></li>
+						</ul>
 						
-						<div id="nav-links" class="right">
-							<ul id="nav-mobile" class="">
-								<li><a href="index.html" class="navbar-main-links white-text" target="_parent">HOME</a></li>
-							</ul>
-						</div>
+						<ul id="nav-mobile" class="right">
+							<li>
+								<a href="#" data-activates="ddSmallDevice" data-beloworigin="true" class="navbar-main-links white-text dropdown-button"><i class="fa fa-bars" aria-hidden="true"></i></a>
+							</li>
+						</ul>
 						
 					</div>
 					
@@ -64,9 +74,9 @@
 				<nav id="social-links" class="transparent z-depth-0">
 					<div class="nav-wrapper" style="margin: 0 auto; width: 90%;">
 						<ul id="nav-mobile" class="left">
-							<li><a href="#" class="white-text"><h5><i class="fa fa-facebook" aria-hidden="true"></i></h5></a></li>
-							<li><a href="#" class="white-text"><h5><i class="fa fa-twitter" aria-hidden="true"></i></h5></a></li>
-							<li><a href="#" class="white-text"><h5><i class="fa fa-instagram" aria-hidden="true"></i></h5></a></li>
+							<li><a href="#" class="white-text" target="blank"><h5><i class="fa fa-facebook" aria-hidden="true"></i></h5></a></li>
+							<li><a href="#" class="white-text" target="blank"><h5><i class="fa fa-twitter" aria-hidden="true"></i></h5></a></li>
+							<li><a href="#" class="white-text" target="blank"><h5><i class="fa fa-instagram" aria-hidden="true"></i></h5></a></li>
 						</ul>
 					</div>
 				</nav>
@@ -91,9 +101,9 @@
 		
 		
 		<!--SCRIPTS-->
-		<script type="text/javascript" src="js/header/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="js/header/materialize.js"></script>
-		<script type="text/javascript" src="js/header/functions.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
 		
 	
 	</body>
