@@ -54,7 +54,7 @@ function navstick(){
 
 function introshow(){
 	var window_top = $(window).scrollTop();
-	var div_top = $('#ss-second').offset().top;
+	var div_top = $('#ss-description').offset().top;
 	
 	if(window_top > (div_top - 200)){
 		$('#stack-intro').addClass('active');
@@ -66,7 +66,7 @@ function introshow(){
 
 function photoshow(){
 	var window_top = $(window).scrollTop();
-	var div_top = $('#ss-third').offset().top;
+	var div_top = $('#ss-photography').offset().top;
 	
 	if(window_top > (div_top - 200)){
 		

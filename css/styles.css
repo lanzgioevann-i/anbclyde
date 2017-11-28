@@ -51,7 +51,7 @@ body{
 }
 
 #navbar-main.navhide {
-	margin-top: -50px;
+	margin-top: -100px;
 }
 
 #navbar-main-logo.showlogo {
@@ -59,19 +59,6 @@ body{
 }
 
 #navbar-main li a:hover {
-	background-color: transparent !important;
-}
-
-#social-links {
-	padding-top: 9px;
-	margin-top: 0vh;
-	position: absolute;
-	top: 0;
-	z-index: 10000;
-	width: 50%;
-}
-
-#social-links li a:hover {
 	background-color: transparent !important;
 }
 
@@ -101,9 +88,21 @@ body{
 }
 
 #nav-links.go-up {
-	margin-top: -70px;
+	margin-top: -100px;
 }
 
+#social-links {
+	padding-top: 9px;
+	margin-top: 0vh;
+	position: absolute;
+	top: 0;
+	z-index: 10000;
+	width: 50%;
+}
+
+#social-links li a:hover {
+	background-color: transparent !important;
+}
 
 /************* 
 	HEADER 
@@ -136,20 +135,23 @@ body{
 }
 
 @media only screen and (min-width: 993px) {
+	/* LARGE */
 	.go-down-link {
-		margin-top: 500px;
+		margin-top: 100px;
 	}
 }
 
 @media only screen and (max-width: 992px) {
+	/* MED */
 	.go-down-link {
-		margin-top: 700px;
+		margin-top: 100px;
 	}
 }
 
 @media only screen and (max-width: 600px) {
+	/* SMALL */
 	.go-down-link {
-		margin-top: 500px;
+		margin-top: 100px;
 	}
 }
 
