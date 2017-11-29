@@ -162,7 +162,7 @@ body{
 	PORT IMG 
 ***************/
 .port-img-hide {
-	margin-top: 5px;
+	margin: 0 !important;
 	opacity: 0;
 	-webkit-transition: 1s all ease-out;
     -moz-transition: 1s all ease-out;
@@ -170,7 +170,6 @@ body{
 }
 
 .port-img-show {
-	margin-top: 5px;
 	opacity: 1;
 }
 
@@ -178,9 +177,7 @@ body{
 	padding: 0 !important;
 	background-color: #fff;
 	max-width: 100%;
-	height: 230px;
-	border-left: 2px solid #fff;
-	border-right: 2px solid #fff;
+	height: 100vh;
 }
 
 .port-img a {
@@ -200,7 +197,7 @@ body{
 	display:inline-block;
 	width:100%;
 	height:100%;
-	border: 5px solid rgba(255,255,255,0.5);
+	border: 3px solid rgba(255,255,255,0.5);
 }
 
 .port-img-hover span p{
@@ -215,7 +212,8 @@ body{
 }
 
 .port-img-1{
-	background: url('../img/gallery/1.jpg') 50% 50% no-repeat;
+	height: 100vh;
+	background: url('../img/gallery/1.jpg') 50% 90% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -223,7 +221,8 @@ body{
 }
 
 .port-img-2{
-	background: url('../img/gallery/2.jpg') 50% 50% no-repeat;
+	height: 50vh;
+	background: url('../img/gallery/2.jpg') 50% 0% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -231,7 +230,8 @@ body{
 }
 
 .port-img-3{
-	background: url('../img/gallery/3.jpg') 50% 90% no-repeat;
+	height: 50vh;
+	background: url('../img/gallery/3.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -239,7 +239,8 @@ body{
 }
 
 .port-img-4{
-	background: url('../img/gallery/4.jpg') 50% 50% no-repeat;
+	height: 50vh;
+	background: url('../img/gallery/4.jpg') 50% 80% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -247,6 +248,7 @@ body{
 }
 
 .port-img-5{
+	height: 50vh;
 	background: url('../img/gallery/5.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -255,6 +257,7 @@ body{
 }
 
 .port-img-6{
+	height: 50vh;
 	background: url('../img/gallery/6.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -263,6 +266,7 @@ body{
 }
 
 .port-img-7{
+	height: 50vh;
 	background: url('../img/gallery/7.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -271,6 +275,7 @@ body{
 }
 
 .port-img-8{
+	height: 50vh;
 	background: url('../img/gallery/8.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -279,6 +284,7 @@ body{
 }
 
 .port-img-9{
+	height: 100vh;
 	background: url('../img/gallery/9.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -453,6 +459,14 @@ body{
 /***************
 	UTILITIES 
 ***************/
+
+.no-margin{
+	margin: 0 !important;
+}
+
+.no-padding{
+	padding: 0 !important;
+}
 
 .card .card-image .card-title {
 	padding: 0px 10px 10px 10px;
