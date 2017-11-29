@@ -198,7 +198,7 @@ main{
 	display:inline-block;
 	width:100%;
 	height:100%;
-	border: 3px 3px 0px 3px solid #fff;
+	border: 1px solid rgba(255,255,255,0.5);
 }
 
 .port-img-hover span p{
@@ -286,7 +286,7 @@ main{
 
 .port-img-9{
 	height: 60vh;
-	background: url('../img/gallery/9.jpg') 50% 50% no-repeat;
+	background: url('../img/gallery/9.jpg') 50% 30% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
