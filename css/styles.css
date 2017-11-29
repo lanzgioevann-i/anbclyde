@@ -199,7 +199,7 @@ main{
 	display:inline-block;
 	width:100%;
 	height:100%;
-	border: 3px solid rgba(255,255,255,0.5);
+	border: 3px 3px 0px 3px solid #fff;
 }
 
 .port-img-hover span p{
