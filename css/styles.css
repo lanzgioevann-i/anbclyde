@@ -25,10 +25,10 @@ body{
 #navbar-main {
 	background-color: rgba(0,0,0, 0.2);
 	position: fixed;
-	padding-top: 20px;
 	margin-top: -1px;
 	z-index: 1000;
-	height: 100px !important;
+	padding-top: 20px;
+	height: 100px;
 	
 	-webkit-transition: 0.3s all ease-out;
     -moz-transition: 0.3s all ease-out;
@@ -36,10 +36,13 @@ body{
 }
 
 #navbar-main.stick {
-	background-color: rgba(255,255,255, 0.95);
-	padding-top: 0px;
-	margin-top: -1px;
-	height: 60px !important;
+	background-color: rgba(0,0,0, 0.6);
+	padding-top: 5px;
+	height: 75px;
+}
+
+.navbar-main-links{
+	
 }
 
 #navbar-main-logo {
@@ -137,21 +140,21 @@ body{
 @media only screen and (min-width: 993px) {
 	/* LARGE */
 	.go-down-link {
-		margin-top: 100px;
+		margin-top: 500px;
 	}
 }
 
 @media only screen and (max-width: 992px) {
 	/* MED */
 	.go-down-link {
-		margin-top: 100px;
+		margin-top: 700px;
 	}
 }
 
 @media only screen and (max-width: 600px) {
 	/* SMALL */
 	.go-down-link {
-		margin-top: 100px;
+		margin-top: 500px;
 	}
 }
 
