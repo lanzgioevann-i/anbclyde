@@ -325,6 +325,14 @@ main{
 	UTILITIES 
 ***************/
 
+#ss-gallery{
+	margin-top: -17px;
+}
+
+.parallax-container {
+	height: 80vh;
+}
+
 .no-margin{
 	margin: 0 !important;
 }

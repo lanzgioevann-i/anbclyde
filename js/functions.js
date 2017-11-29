@@ -50,7 +50,7 @@ function photoshow(){
 	var window_top = $(window).scrollTop();
 	var div_top = $('#ss-photography').offset().top;
 	
-	if(window_top > (div_top - 200)){
+	if(window_top > (div_top - 400)){
 		
 		setTimeout(function() {
 			$('.port-img-1').addClass('port-img-show');
