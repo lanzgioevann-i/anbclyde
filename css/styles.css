@@ -213,7 +213,7 @@ main{
 }
 
 .port-img-1{
-	height: 60vh;
+	height: 80vh;
 	background: url('../img/gallery/1.jpg') 50% 90% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -222,7 +222,7 @@ main{
 }
 
 .port-img-2{
-	height: 30vh;
+	height: 40vh;
 	background: url('../img/gallery/2.jpg') 50% 0% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -231,7 +231,7 @@ main{
 }
 
 .port-img-3{
-	height: 30vh;
+	height: 40vh;
 	background: url('../img/gallery/3.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

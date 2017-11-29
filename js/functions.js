@@ -10,9 +10,8 @@ var navlinkanimated = 0;
 function navstick(){
 	//nav show
 	var window_top = $(window).scrollTop();
-	var div_top = $('#ss-photography').offset().top;
 	
-	if(window_top > div_top - 130){ 
+	if(window_top > 0){ 
 		$('#navbar-main').addClass('stick');
 		$('#navbar-main').removeClass('z-depth-0');
 		
