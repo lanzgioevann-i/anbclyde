@@ -41,15 +41,17 @@
 					
 					<!-- tablet above -->
 					<div class="hide-on-small-only hide-on-below-800px">
-						<a href="index.html" id="" class="brand-logo grey-text center"><img src="img/nav-logo2.png"></a>
+						<a href="#ss-home" id="" class="brand-logo center"><img src="img/nav-logo2.png"></a>
 						
-						<div id="nav-links" class="nav-center" style="margin: 0 auto; width: 70%;">
+						<div id="nav-links" class="nav-center">
 							<ul id="nav-mobile" class="center hide-on-small-only">
-								<li><a href="gallery-engagements.html" class="navbar-main-links white-text left ">ENGAGEMENTS</a></li>
-								<li><a href="gallery-weddings.html" class="navbar-main-links white-text left ">WEDDINGS</a></li>
+								<li><a href="#ss-photography" class="navbar-main-links white-text left">PHOTOGRAPHY</a></li>
+								<li><a href="#ss-cinematography" class="navbar-main-links white-text left ">CINEMATOGRAPHY</a></li>
 								
-								<li><a href="gallery-casuals.html" class="navbar-main-links white-text right ">CASUAL SHOOTS</a></li>
-								<li><a href="index.html" class="navbar-main-links white-text right">HOME</a></li>
+								
+								<li><a href="#" class="navbar-main-links white-text right ">PRICING</a></li>
+								<li><a href="#ss-contact" class="navbar-main-links white-text right ">CONTACT US</a></li>
+								<li><a href="#ss-description" class="navbar-main-links white-text right ">ABOUT</a></li>
 							</ul>
 						</div>
 					</div>
@@ -57,14 +59,14 @@
 				
 					<!-- small devices -->
 					<div class="hide-on-med-and-up show-on-above-800px">
-						<a href="index.html" class="brand-logo grey-text left"><img src="img/nav-logo.png"></a>
+						<a href="#ss-home" class="brand-logo left"><img src="img/nav-logo.png"></a>
 						<!-- Dropdown Works -->
-						<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile white">
-							<li><a href="index.html" class="grey-text" target="_parent">HOME</a></li>
-							<li><a href="gallery-engagements.html" class="grey-text" target="_parent">ENGAGEMENTS</a></li>
-							<li><a href="gallery-weddings.html" class="grey-text" target="_parent">WEDDINGS</a></li>
-							<li><a href="gallery-casuals.html" class="grey-text" target="_parent">CASUAL SHOOTS</a></li>
-							<li><a href="#ss-contact" class="grey-text" target="_parent">CONTACT US</a></li>
+						<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile">
+							<li><a href="#ss-description" class="white-text">ABOUT</a></li>
+							<li><a href="#ss-photography" class="white-text">PHOTOGRAPHY</a></li>
+							<li><a href="#ss-cinematography" class="white-text">CINEMATOGRAPHY</a></li>
+							<li><a href="#" class="white-text">PRICING</a></li>
+							<li><a href="#ss-contact" class="white-text">CONTACT US</a></li>
 						</ul>
 						
 						<ul id="nav-mobile" class="right">
@@ -97,7 +99,7 @@
 					<div class="header center-align">
 						<div class="container">
 							<div class="go-down-link center hide-on-small-only">
-								<h1><a href="#ss-main" class="white-text"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></h1>
+								<h1><a href="#ss-photography" class="white-text"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></h1>
 							</div>
 						</div>
 					</div>
