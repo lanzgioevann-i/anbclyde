@@ -15,6 +15,8 @@ function navstick(){
 		$('#navbar-main').addClass('stick');
 		$('#navbar-main').removeClass('z-depth-0');
 		
+		$('#ddSmallDevice').addClass('ddBackground');
+		
 		//links
 		//$('#navbar-main-logo').addClass('showlogo');
 		//$('.navbar-main-links').addClass('grey-text');
@@ -24,6 +26,8 @@ function navstick(){
 	else{
 		$('#navbar-main').removeClass('stick');
 		$('#navbar-main').addClass('z-depth-0');
+		
+		$('#ddSmallDevice').removeClass('ddBackground');
 		
 		//links
 		//$('#navbar-main-logo').removeClass('showlogo');

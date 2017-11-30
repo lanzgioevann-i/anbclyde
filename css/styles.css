@@ -62,10 +62,34 @@ main{
 	background-color: transparent !important;
 }
 
+#ddSmallDevice {
+	margin-top: 3px !important;
+	background-color: rgba(0,0,0, 0.2);
+}
+
+#ddSmallDevice.ddBackground {
+	margin-top: -6px !important;
+	background-color: rgba(0,0,0, 0.6) !important;
+}
+
 .nav-dropdown-mobile {
 	width: 100% !important;
-	margin: 0 !important;
-	padding:0 !important;
+}
+
+.nav-center {
+	margin: 0 auto;
+	width: 70%;
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+	  /* IPAD PRO PORTRAIT */
+	.nav-center {
+		width: 90%;
+	}
 }
 
 .nav-center ul {
