@@ -11,7 +11,7 @@ function navstick(){
 	//nav show
 	var window_top = $(window).scrollTop();
 	
-	if(window_top > 0){ 
+	if(window_top > 300){
 		$('#navbar-main').addClass('stick');
 		$('#navbar-main').removeClass('z-depth-0');
 		
