@@ -133,7 +133,7 @@ function pricingshow(){
 }
 
 $(function() { 
-  //$(window).scroll(pricingshow);
+  $(window).scroll(pricingshow);
   $(window).scroll(navstick);
   $(window).scroll(introshow);
   $(window).scroll(photoshow);
