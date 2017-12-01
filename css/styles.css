@@ -316,6 +316,7 @@ main{
 **************/
 .team{
 	margin-top: 100px;
+	margin-bottom: 10px;
 }
 
 .team-header{
@@ -327,7 +328,7 @@ main{
 }
 
 .team-image{
-	margin-top: -100px;
+	margin-top: -80px;
 	width: 50%;
 	border: 5px solid #fff;
 }
