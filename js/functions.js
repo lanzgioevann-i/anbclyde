@@ -8,14 +8,14 @@ function navstick(){
 	//nav show
 	var window_top = $(window).scrollTop();
 	var div_top = $('#navbar-main').offset().top;
-	var photog_top = $('#ss-main').offset().top;
+	var main = $('#ss-main').offset().top;
 	
 	
 	if(window_top > div_top){
 		$('#navbar-main').addClass('stick');
 		$('#ddSmallDevice').addClass('ddBackground');
 	}
-	else if(window_top <= (photog_top - 75)){
+	else if(window_top <= (main - 100)){
 		$('#navbar-main').removeClass('stick');
 		$('#ddSmallDevice').removeClass('ddBackground');
 	}
@@ -48,7 +48,7 @@ function navstick(){
 	*/
 }
 
-function introshow(){
+function descriptionshow(){
 	var window_top = $(window).scrollTop();
 	var div_top = $('#ss-description').offset().top;
 	
@@ -57,6 +57,13 @@ function introshow(){
 	}
 	else{
 		$('#stack-intro').removeClass('active');
+	}
+	
+	if(window_top > (div_top + 150)){
+		$('.team-content').addClass('show-team');
+	}
+	else{
+		$('.team-content').removeClass('show-team');
 	}
 }
 
@@ -99,32 +106,9 @@ function photoshow(){
 	}
 }
 
-var x = 0;
-function pricingshow(){
-	var window_top = $(window).scrollTop();
-	var div_top = $('#ss-pricing').offset().top;
-	
-	if(window_top > (div_top - 200)){
-		if(x == 0){
-			$("#price-photography").addClass("active");
-			$("#price-cinematography").addClass("active");
-			
-			$('.collapsible').collapsible('open', 0);
-			x++;
-		}
-	}
-	else{
-		//$("#price-photography").removeClass("active");
-		//$(".collapsible").collapsible({accordion: true});
-		//$(".collapsible").collapsible({accordion: false});
-	}
-	
-}
-
 $(function() { 
-  $(window).scroll(pricingshow);
   $(window).scroll(navstick);
-  $(window).scroll(introshow);
+  $(window).scroll(descriptionshow);
   $(window).scroll(photoshow);
 });
 

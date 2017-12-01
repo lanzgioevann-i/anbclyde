@@ -225,9 +225,31 @@ main{
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	font-size: 1.3em;
-	margin-top: 10%;
-	margin-left: 3%;
 	font-weight: bold;
+	
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 992px) {
+	/* MED DOWN */
+	.port-img a {
+		opacity: 1;
+		background-color: rgba(0,0,0,0.1);
+	}
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+	  /* IPAD PRO PORTRAIT */
+	.port-img a {
+		opacity: 1;
+		background-color: rgba(0,0,0,0.1);
+	}
 }
 
 .port-img-1{
@@ -312,6 +334,16 @@ main{
 }
 
 /**************
+	PRICING
+**************/
+@media only screen and (max-width: 600px) {
+	/* SMALL */
+	.pricing{
+		padding-bottom: 50px;
+	}
+}
+
+/**************
 	ABOUT
 **************/
 .team{
@@ -335,6 +367,36 @@ main{
 
 .team-content{
 	padding: 15px;
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	
+	-webkit-transition: 1s all ease-out;
+    -moz-transition: 1s all ease-out;
+    transition: 1s all ease-out;
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+	  /* IPAD PRO PORTRAIT */
+	.team-content{
+		max-height: 300px;
+		opacity: 1;
+		overflow: hidden;
+		
+		-webkit-transition: 1s all ease-out;
+		-moz-transition: 1s all ease-out;
+		transition: 1s all ease-out;
+	}
+}
+
+.show-team{
+	max-height: 300px;
+	opacity: 1;
+	
 }
 
 .team-content span{
@@ -360,6 +422,46 @@ main{
 /***************
 	CONTACT
 ***************/
+.contact-title{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.contact-content{
+	margin-top: 20px;
+	min-height: 250px;
+	padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 993px) {
+	/* LARGE */
+	.contact-border{
+		border-right: 2px dashed #c8c8c8;
+	}
+	.get-in-touch{
+		width: 20% !important;
+	}
+}
+@media only screen and (max-width: 600px) {
+	/* SMALL */
+	.contact-content{
+		margin-top: 20px;
+		min-height: 100%;
+		padding-bottom: 20px;
+	}
+	
+}
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+	  /* IPAD PRO PORTRAIT */
+	.contact-border{
+		border-right: 0px dashed #c8c8c8;
+	}
+}
+
 #ss-contact{
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -385,6 +487,7 @@ main{
 .social-foot{
 	font-size: 2em;
 	padding: 0 10px 0 10px;
+	color: #898989;
 }
 
 /***************
@@ -392,7 +495,7 @@ main{
 ***************/
 
 #googlemap {
-	height: 400px;
+	height: 250px;
 	width: 100%;
 }
 
@@ -407,6 +510,11 @@ main{
 @font-face {
 	font-family: Pecita;
 	src: url('../fonts/Pecita.otf');
+}
+
+@font-face {
+	font-family: Open Sans;
+	src: url('../fonts/OpenSans-Regular.ttf');
 }
 
 blockquote{
@@ -473,9 +581,7 @@ blockquote{
   .show-on-below-800px {
     display: block !important;
   }
-}
-
-@media only screen and (max-width: 800px) {
+  
   .show-on-above-800px {
     display: block !important;
   }
@@ -489,6 +595,10 @@ blockquote{
     .center-when-small {
         text-align: center;
     }
+}
+
+.greeny{
+	background-color: #8fa98e !important;
 }
 
 .greeny-text {

@@ -15,7 +15,7 @@ function navstick(){
 		$('#navbar-main').addClass('stick');
 		$('#ddSmallDevice').addClass('ddBackground');
 	}
-	else if(window_top <= (photog_top - 75)){
+	else if(window_top <= (photog_top - 100)){
 		$('#navbar-main').removeClass('stick');
 		$('#ddSmallDevice').removeClass('ddBackground');
 	}
