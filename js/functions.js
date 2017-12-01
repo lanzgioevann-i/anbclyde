@@ -104,7 +104,7 @@ function pricingshow(){
 	var window_top = $(window).scrollTop();
 	var div_top = $('#ss-pricing').offset().top;
 	
-	if(window_top > div_top){
+	if(window_top > (div_top - 200)){
 		if(x == 0){
 			$("#price-photography").addClass("active");
 			$("#price-cinematography").addClass("active");
