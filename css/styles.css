@@ -312,9 +312,41 @@ main{
 }
 
 /**************
+	ABOUT
+**************/
+.team{
+	margin-top: 100px;
+}
+
+.team-header{
+	font-family: Pecita;
+	padding-bottom: 5px;
+	border-bottom: 2px dashed #dcdcdc;
+	color: #3d3d3d;
+	background: linear-gradient(#fafafa, white)
+}
+
+.team-image{
+	margin-top: -100px;
+	width: 50%;
+	border: 5px solid #fff;
+}
+
+.team-content{
+	padding: 15px;
+}
+
+.team-content span{
+	font-family: Eminenz;
+	font-size: 1em;
+	color: #606060;
+	font-weight: bold;
+}
+
+/**************
 	IG FEED
 **************/
-.test{
+.ig-image{
 	height: 50vh;
 	
 	-webkit-background-size: cover;
@@ -341,6 +373,18 @@ main{
 	height: auto !important;
 }
 
+.footer-copyright{
+	border-top: 2px dashed #e1e1e1;
+}
+
+.copyright-text{
+	padding-top: 13px;
+}
+
+.social-foot{
+	font-size: 2em;
+	padding: 0 10px 0 10px;
+}
 
 /***************
    GOOGLE MAPS
@@ -354,6 +398,16 @@ main{
 /***************
 	UTILITIES 
 ***************/
+@font-face {
+	font-family: Eminenz;
+	src: url('../fonts/eminenz.ttf');
+}
+
+@font-face {
+	font-family: Pecita;
+	src: url('../fonts/Pecita.otf');
+}
+
 blockquote{
   border-left: 5px solid #8fa98e; /* line color */
 }
