@@ -108,17 +108,6 @@ function pricingshow(){
 		if(x == 0){
 			$("#price-photography").addClass("active");
 			$("#price-cinematography").addClass("active");
-			$("#price-option").addClass("active");
-			
-			$('.collapsible').collapsible('open', 0);
-			x++;
-		}
-	}
-	if(window_top > (div_top + 500)){
-		if(x == 1){
-			$("#price-photography2").addClass("active");
-			$("#price-cinematography2").addClass("active");
-			$("#price-option2").addClass("active");
 			
 			$('.collapsible').collapsible('open', 0);
 			x++;
