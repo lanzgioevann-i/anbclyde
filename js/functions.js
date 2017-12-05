@@ -48,9 +48,9 @@ function navstick(){
 	*/
 }
 
-function descriptionshow(){
+function aboutshow(){
 	var window_top = $(window).scrollTop();
-	var div_top = $('#ss-description').offset().top;
+	var div_top = $('#ss-about').offset().top;
 	
 	if(window_top > (div_top - 200)){
 		$('#stack-intro').addClass('active');
@@ -108,7 +108,7 @@ function photoshow(){
 
 $(function() { 
   $(window).scroll(navstick);
-  $(window).scroll(descriptionshow);
+  $(window).scroll(aboutshow);
   $(window).scroll(photoshow);
 });
 
