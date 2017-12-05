@@ -258,7 +258,7 @@ main{
 
 .port-img-1{
 	height: 80vh;
-	background: url('../img/gallery/1.jpg') 50% 90% no-repeat;
+	background: url('../img/photography/1.jpg') 50% 90% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -267,7 +267,7 @@ main{
 
 .port-img-2{
 	height: 40vh;
-	background: url('../img/gallery/2.jpg') 50% 0% no-repeat;
+	background: url('../img/photography/2.jpg') 50% 0% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -276,7 +276,7 @@ main{
 
 .port-img-3{
 	height: 40vh;
-	background: url('../img/gallery/3.jpg') 50% 50% no-repeat;
+	background: url('../img/photography/3.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -285,7 +285,7 @@ main{
 
 .port-img-4{
 	height: 60vh;
-	background: url('../img/gallery/4.jpg') 50% 80% no-repeat;
+	background: url('../img/photography/4.jpg') 50% 80% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -294,7 +294,7 @@ main{
 
 .port-img-5{
 	height: 50vh;
-	background: url('../img/gallery/5.jpg') 50% 50% no-repeat;
+	background: url('../img/photography/5.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -303,7 +303,7 @@ main{
 
 .port-img-6{
 	height: 50vh;
-	background: url('../img/gallery/6.jpg') 50% 50% no-repeat;
+	background: url('../img/photography/6.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -312,7 +312,7 @@ main{
 
 .port-img-7{
 	height: 30vh;
-	background: url('../img/gallery/7.jpg') 50% 50% no-repeat;
+	background: url('../img/photography/7.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -321,7 +321,7 @@ main{
 
 .port-img-8{
 	height: 30vh;
-	background: url('../img/gallery/8.jpg') 50% 50% no-repeat;
+	background: url('../img/photography/8.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -330,7 +330,7 @@ main{
 
 .port-img-9{
 	height: 60vh;
-	background: url('../img/gallery/9.jpg') 50% 30% no-repeat;
+	background: url('../img/photography/9.jpg') 50% 30% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -350,12 +350,23 @@ main{
 /**************
   GALLERY SPEC
 ***************/
-.client {
+.gallery {
 	
 }
+.gallery-header  {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+.gallery-header span {
+	font-size: 0.8em;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
 
-.client-header {
-	
+.gallery-body {
+	padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /**************
@@ -629,6 +640,7 @@ blockquote{
 }
 
 a{
+	color: #757575 !important;
 	-webkit-transition: 0.5s all ease-out;
     -moz-transition: 0.5s all ease-out;
     transition: 0.5s all ease-out;
