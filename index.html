@@ -153,6 +153,7 @@
 					</div>
 					
 					<div class="row no-margin">
+					
 						<div class="col s12 m6 l6 xl6 port-img port-img-5 port-img-hide">
 							<a href="gallery-engagements.html" class="port-img-hover center">
 								<span>
@@ -171,6 +172,7 @@
 								</span>
 							</a>
 						</div>
+						
 					</div>
 
 					
@@ -588,136 +590,189 @@
 				
 			</div>
 
-			<!-- CONTACT US -->
-			<div id="ss-contact" class="scrollspy white" style="margin-top:-2px;">
-				
-				<hr class="style12">
-				
-				<div class="row" style="padding-top: 50px;">
-				
-					<div class="" style="width: 95%; margin: 0 auto;">
-						
-						<div class="col s12 m3 l2">
-							<div class="center-when-small"><span class="contact-title">Get In Touch!</span></div>
-							
-							<div class="contact-content contact-border center-when-small grey-text">
-								<span><i class="fa fa-map-marker" aria-hidden="true"></i> 72 Red Lion Street,<br>London, Philippines</span><br>
-								<br>
-								<span><i class="fa fa-user" aria-hidden="true"></i> 12312312</span><br>
-								<span><i class="fa fa-phone" aria-hidden="true"></i> 12312312</span><br>
-								<span><i class="fa fa-envelope" aria-hidden="true"></i> asdada@asdasda.com</span><br>
-								<br>
-								<span><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</span><br>
-								<span><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</span><br>
-								<span><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</span><br>
-								<span><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span><br>
-							</div>
-							
-						</div>
-						
-						<div class="col s12 m9 l5">
-							<div class="center-when-small"><span class="contact-title">Drop a Message!</span></div>
-							
-							<div class="contact-content grey lighten-5" style="padding-bottom: 0; border-radius: 5px;">
-								<form action="mailto:no-one@snailmail.com?subject=Mail From Website" method="post" enctype="text/plain">
-									<div class="row">
-									
-										<div class="input-field col s6 m4 l4 xl4">
-											<input id="full_name" type="text" class="validate" name="full_name">
-											<label for="full_name">Full Name</label>
-										</div>
-										
-										<div class="input-field col s6 m4 l4 xl4">
-											<input id="phone" type="tel" class="validate" name="phone">
-											<label for="phone">Phone Number</label>
-										</div>
-										
-										<div class="input-field col s12 m4 l4 xl4">
-											<input id="email" type="email" class="validate" name="email">
-											<label for="email">Email</label>
-										</div>
-										
-										<div class="input-field col s12">
-											<textarea id="message" class="materialize-textarea" name="message"></textarea>
-											<label for="message">Message</label>
-										</div>
-										
-										<div class="row center">
-											<div class="col s6">
-												<input type="submit" value="Send" class="waves-effect waves-light btn greeny">
-											</div>
-											<div class="col s6">
-												<input type="reset" value="Reset" class="waves-effect waves-light btn greeny">
-											</div>
-										</div>
-										
-									</div>
-								</form>
-							
-							</div>
-						</div>
-						
-						<div class="col s12 m12 l5">
-							<div class="center-when-small"><span class="contact-title">Meet with us!</span></div>
-							
-							<div class="contact-content">
-								<div id="googlemap"></div>
-								<script>
-									function initMap() {
-										var uluru = {lat: 14.070720, lng: 121.302313};
-										var map = new google.maps.Map(document.getElementById('googlemap'), {
-											zoom: 20,
-											center: uluru,
-											mapTypeId: 'roadmap',
-											mapTypeControl: true,
-											mapTypeControlOptions: {
-												style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-												mapTypeIds: ['roadmap', 'terrain', 'satellite']
-											}
-										});
-										var marker = new google.maps.Marker({
-											position: uluru,
-											map: map
-										});
-									}
-								</script>
-								<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YbJJhTqKVjkqHzSSYT2TuDiZyJ3-_Yk&callback=initMap"></script>
-							</div>
-							
-						</div>
-					
-					</div>
-					
-				</div>
-				
-			</div>
-			
 			<!-- FOOTER -->
-			<footer class="page-footer no-padding">
-				<div class="footer-copyright white">
-					<div class="container grey-text hide-on-small-only">
-						<span class="left copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Above and Beyond</span>
-						<span class="right">
-							<a class="social-foot" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-							<a class="social-foot" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a class="social-foot" href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-							<a class="social-foot" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-						</span>
+			<div id="footer">
+			
+				<!-- CONTACT US -->
+				<div id="ss-contact" class="scrollspy white" style="margin-top:-2px;">
+					
+					<div class="row no-margin">
+						<div id="instafeed"></div>
 					</div>
 					
-					<div class="container grey-text text-darken-4 center hide-on-med-and-up" style="padding-top: 10px;">
-						<span class=" copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Above and Beyond</span>
-						<br>
-						<span class="">
-							<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-							<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-							<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-						</span>
+					<script type="text/javascript">
+						currentCount = 0;
+						var userFeed = new Instafeed({
+							get: 'user',
+							userId: '6679769289',
+							clientId: '9afb597803744903aaca0549e4d48b4c',
+							accessToken: '6679769289.9afb597.9b41503d36e64c0283da3f23a20b0893',
+							//userId: '441261446',
+							//clientId: ' 2ef18e5db3644483ad67c22cd212d13e',
+							//accessToken: '441261446.2ef18e5.6088c146db284029b022af658bc25e89',
+							resolution: 'standard_resolution',
+							template: '<div class="col s12 m3 port-img ig-image" style="background: url({{image}}) 50% 50% no-repeat; height: 40vh; background-size: cover; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover;"><a href="{{link}}" class="port-img-hover center"><span><p class=""><i class="fa fa-heart" aria-hidden="true"></i> {{likes}} &bull; <i class="fa fa-comment" aria-hidden="true"></i> {{comments}}</p></span></a></div>',
+							limit: 60,
+							links: false,
+							sortBy: 'most-recent',
+							filter: function(image) {
+								console.log(image.tags);
+
+								var shouldDisplay = (currentCount < 4);
+								
+								//filter tags
+								var tag1 = 'test';
+								var tag2 = 'anb';
+								var tag3 = 'site';
+
+								if(shouldDisplay){
+									if(image.tags.indexOf(tag2) >= 0 && image.tags.indexOf(tag3) >= 0){
+										currentCount += 1;
+									}
+									else{
+										shouldDisplay = false;
+									}
+								}
+								/*if (shouldDisplay) {
+									if (image.likes.count >= 0) {
+										currentCount += 1;
+									} else {
+										shouldDisplay = false;
+									}
+								}*/
+
+								return shouldDisplay;
+							}
+						});
+						userFeed.run();
+					</script>
+					
+					<div class="row" style="padding-top: 50px;">
+					
+						<div class="" style="width: 95%; margin: 0 auto;">
+							
+							<div class="col s12 m3 l2">
+								<div class="center-when-small"><span class="contact-title">Get In Touch!</span></div>
+								
+								<div class="contact-content contact-border center-when-small grey-text">
+									<span><i class="fa fa-map-marker" aria-hidden="true"></i> 72 Red Lion Street,<br>London, Philippines</span><br>
+									<br>
+									<span><i class="fa fa-user" aria-hidden="true"></i> 12312312</span><br>
+									<span><i class="fa fa-phone" aria-hidden="true"></i> 12312312</span><br>
+									<span><i class="fa fa-envelope" aria-hidden="true"></i> asdada@asdasda.com</span><br>
+									<br>
+									<span><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</span><br>
+									<span><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</span><br>
+									<span><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</span><br>
+									<span><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span><br>
+								</div>
+								
+							</div>
+							
+							<div class="col s12 m9 l5">
+								<div class="center-when-small"><span class="contact-title">Drop a Message!</span></div>
+								
+								<div class="contact-content grey lighten-5" style="padding-bottom: 0; border-radius: 5px;">
+									<form action="mailto:no-one@snailmail.com?subject=Mail From Website" method="post" enctype="text/plain">
+										<div class="row">
+										
+											<div class="input-field col s6 m4 l4 xl4">
+												<input id="full_name" type="text" class="validate" name="full_name">
+												<label for="full_name">Full Name</label>
+											</div>
+											
+											<div class="input-field col s6 m4 l4 xl4">
+												<input id="phone" type="tel" class="validate" name="phone">
+												<label for="phone">Phone Number</label>
+											</div>
+											
+											<div class="input-field col s12 m4 l4 xl4">
+												<input id="email" type="email" class="validate" name="email">
+												<label for="email">Email</label>
+											</div>
+											
+											<div class="input-field col s12">
+												<textarea id="message" class="materialize-textarea" name="message"></textarea>
+												<label for="message">Message</label>
+											</div>
+											
+											<div class="row center">
+												<div class="col s6">
+													<input type="submit" value="Send" class="waves-effect waves-light btn greeny">
+												</div>
+												<div class="col s6">
+													<input type="reset" value="Reset" class="waves-effect waves-light btn greeny">
+												</div>
+											</div>
+											
+										</div>
+									</form>
+								
+								</div>
+							</div>
+							
+							<div class="col s12 m12 l5">
+								<div class="center-when-small"><span class="contact-title">Meet with us!</span></div>
+								
+								<div class="contact-content">
+									<div id="googlemap"></div>
+									<script>
+										function initMap() {
+											var uluru = {lat: 14.070720, lng: 121.302313};
+											var map = new google.maps.Map(document.getElementById('googlemap'), {
+												zoom: 20,
+												center: uluru,
+												mapTypeId: 'roadmap',
+												mapTypeControl: true,
+												mapTypeControlOptions: {
+													style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+													mapTypeIds: ['roadmap', 'terrain', 'satellite']
+												}
+											});
+											var marker = new google.maps.Marker({
+												position: uluru,
+												map: map
+											});
+										}
+									</script>
+									<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YbJJhTqKVjkqHzSSYT2TuDiZyJ3-_Yk&callback=initMap"></script>
+								</div>
+								
+							</div>
+						
+						</div>
+						
 					</div>
+					
 				</div>
-			</footer>
-		
+				
+				<!-- COPYRIGHT -->
+				<footer class="page-footer no-padding">
+					<div class="footer-copyright white">
+						<div class="container grey-text hide-on-small-only">
+							<span class="left copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Above and Beyond</span>
+							<span class="right">
+								<a class="social-foot" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a class="social-foot" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a class="social-foot" href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+								<a class="social-foot" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+							</span>
+						</div>
+						
+						<div class="container grey-text text-darken-4 center hide-on-med-and-up" style="padding-top: 10px;">
+							<span class=" copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Above and Beyond</span>
+							<br>
+							<span class="">
+								<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+								<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+							</span>
+						</div>
+					</div>
+				</footer>
+			
+			</div>
 		</main>
 		
 		<!--SCRIPTS-->

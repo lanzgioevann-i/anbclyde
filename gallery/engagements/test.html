@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<!-- GAMMA -->
+		<meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		
+		<link href="../../img/icon.png" rel="icon">
+		
+		<!-- GAMMA -->
+		<noscript><link rel="stylesheet" type="text/css" href="../../css/gallery/noJS.css"/></noscript>
+        <link rel="stylesheet" type="text/css" href="../../css/gallery/gallery-styles.css"/>
+		<script src="../../js/gallery/modernizr.custom.70736.js"></script>
+		
+		<!-- OWN -->
+        <link rel="stylesheet" type="text/css" href="../../css/styles.css"/>
+		<link type="text/css" rel="stylesheet" href="../../css/hr-styles.css" />
+		
+		<!-- MATERIALIZE and FONT AWESOME -->
+        <link rel="stylesheet" type="text/css" href="../../css/materialize.css"/>
+		<link rel="stylesheet" href="../../css/font-awesome.min.css">
+		
+		<script>
+			/* CHANGE ME */
+			var gallery_title = 'Ahmed & Fatima';
+			var gallery_type = 'engagements';
+			var gallery_name = 'ahmed-fatima';
+			var number_of_images = 34;
+			
+			document.title = gallery_title + ' | Above & Beyond';
+		</script>
+		
+    </head>
+    <body>
+		
+		<header>
+			
+			<!-- HEADER -->
+			<div id="header-container">
+				<div class="scrollspy" id="ss-home">
+					<div class="header center-align">
+						<div class="no-margin">
+							<!--<img src="img/hero2.png" class="responsive-img">-->
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- NAV BAR -->
+			<nav id="navbar-main" class="z-depth-0">
+				<div class="nav-wrapper">
+					
+					<!-- tablet above -->
+					<div class="hide-on-small-only hide-on-below-800px">
+						<a href="#ss-home" id="" class="brand-logo grey-text center"><img src="../../img/nav-logo.png"></a>
+						
+						<div id="nav-links" class="nav-center">
+							<ul id="nav-mobile" class="center hide-on-small-only">
+								<li><a href="../../gallery.html#ss-engagements" class="navbar-main-links white-text left ">ENGAGEMENTS</a></li>
+								<li><a href="../../gallery.html#ss-weddings" class="navbar-main-links white-text left ">WEDDINGS</a></li>
+								
+								<li><a href="../../gallery.html#ss-casuals" class="navbar-main-links white-text right ">CASUAL</a></li>
+								<li><a href="../../gallery.html" class="navbar-main-links white-text right ">GALLERY</a></li>
+								<li><a href="../../index.html" class="navbar-main-links white-text right">HOME</a></li>
+							</ul>
+						</div>
+					</div>
+				
+				
+					<!-- small devices -->
+					<div class="hide-on-med-and-up show-on-above-800px">
+						<a href="#ss-home" class="brand-logo left"><img src="../../img/nav-logo-mini.png"></a>
+						<!-- Dropdown Works -->
+						<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile">
+							<li><a href="../../index.html" class="white-text" target="_parent">HOME</a></li>
+							<li><a href="../../gallery-engagements.html" class="white-text" target="_parent">ENGAGEMENTS</a></li>
+							<li><a href="../../gallery-weddings.html" class="white-text" target="_parent">WEDDINGS</a></li>
+							<li><a href="../../gallery-casuals.html" class="white-text" target="_parent">CASUAL SHOOTS</a></li>
+							<li><a href="#ss-contact" class="white-text" target="_parent">CONTACT US</a></li>
+						</ul>
+						
+						<ul id="nav-mobile" class="right">
+							<li>
+								<a href="#" data-activates="ddSmallDevice" data-beloworigin="true" class="navbar-main-links white-text dropdown-button"><i class="fa fa-bars" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</nav>
+		
+		</header>
+		
+		<main class="white scrollspy" id="ss-main">
+	
+			<br>
+			<!-- DESCRIPTION -->
+			<div class="container">
+					
+				<h4 class="center">Ahmed & Fatima</h4>
+				<p class="center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus et metus sollicitudin, egestas ipsum eget, aliquet lectus. Praesent et velit ac ligula aliquet egestas ut eu est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus hendrerit varius. Suspendisse consequat dictum dui, nec elementum metus commodo.</p>
+				
+			</div>
+			<br>
+			
+			<!-- GALLERY -->
+			<gallery>
+			
+				<header class="clearfix">
+				
+					<div class="support-note">
+						<span class="note-ie">Sorry, only modern browsers.</span>
+					</div>
+					
+				</header>
+				
+				<div class="gamma-container gamma-loading" id="gamma-container">
+
+					<ul id="gallery-content" class="gamma-gallery"></ul>
+					
+					<script>
+						//alert(gallery_name);
+						var htmlElements = '';
+						for (var i = 1; i <= number_of_images; i++) {
+						   htmlElements += '<li><div data-description="<h3>' + gallery_title + '</h3>"><div data-src="../../img/gallery/' + gallery_type + '/' + gallery_name + '/' + i + '.jpg"></div><noscript><img src="../../img/gallery/' + gallery_type + '/' + gallery_name + '/' + i + '.jpg"/></noscript></div></li>';
+						}
+						var container = document.getElementById("gallery-content");
+						container.innerHTML = htmlElements;
+					</script>
+
+					<div class="gamma-overlay"></div>
+
+				</div>
+
+			</gallery>
+			
+			<div id="footer-placeholder"></div>
+			
+		</main>
+		<!--SCRIPTS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../../js/materialize.js"></script>
+		<script src="../../js/gallery/jquery.masonry.min.js"></script>
+		<script src="../../js/gallery/jquery.history.js"></script>
+		<script src="../../js/gallery/js-url.min.js"></script>
+		<script src="../../js/gallery/jquerypp.custom.js"></script>
+		<script src="../../js/gallery/gamma.js"></script>
+		<script type="text/javascript">
+			
+			$(function() {
+
+				var GammaSettings = {
+						// order is important!
+						viewport : [ {
+							width : 1200,
+							columns : 5
+						}, {
+							width : 900,
+							columns : 4
+						}, {
+							width : 500,
+							columns : 3
+						}, { 
+							width : 320,
+							columns : 2
+						}, { 
+							width : 0,
+							columns : 2
+						} ]
+				};
+
+				Gamma.init(GammaSettings);
+
+			});
+
+		</script>	
+		<script src="../../js/gallery/functions.js"></script>
+		<script>
+			$('body').css('background', 'url(../../img/gallery/' + gallery_type + '/' + gallery_name +'/header.jpg) center center no-repeat fixed');
+			$('body').css('-webkit-background-size', 'cover');
+			$('body').css('-moz-background-size', 'cover');
+			$('body').css('-o-background-size', 'cover');
+			$('body').css('background-size', 'cover');
+		</script>
+		
+		<script>
+			$('#footer-placeholder').load('../../index.html #footer');
+		</script>
+		
+	</body>
+</html>

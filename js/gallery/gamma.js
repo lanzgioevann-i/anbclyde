@@ -783,8 +783,9 @@ var Gamma = (function() {
 			Gamma.current = id;
 
 			// transition: overlay opacity
+			document.title = gallery_title + ' | Above & Beyond';
 			Gamma.overlay.show();
-
+			
 			if( Gamma.settings.overlayAnimated && anim && Gamma.supportTransitions ) {
 
 				_setTransition( Gamma.overlay , 'opacity' );

@@ -63,7 +63,7 @@ function aboutshow(){
 		$('.team-content').addClass('show-team');
 	}
 	else{
-		$('.team-content').removeClass('show-team');
+		//$('.team-content').removeClass('show-team');
 	}
 }
 

@@ -338,6 +338,13 @@ main{
 }
 
 /**************
+	INSTAFEED
+**************/
+.ig-image{
+	overflow: hidden;
+}
+
+/**************
 	PRICING
 **************/
 @media only screen and (max-width: 600px) {
