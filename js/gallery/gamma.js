@@ -356,7 +356,7 @@ var Gamma = (function() {
 		},
 		// saves the history state / or if history not supported goes to specific image
 		_saveState = function( id ) {
-
+			
 			if( !Gamma.settings.historyapi && id != undefined ) {
 
 				Gamma.isSV ? _goto( false, id ) : _goto( true, id );
@@ -783,7 +783,7 @@ var Gamma = (function() {
 			Gamma.current = id;
 
 			// transition: overlay opacity
-			document.title = gallery_title + ' | Above & Beyond';
+			document.getElementById("web-title").innerHTML = gallery_title + ' | Above & Beyond';
 			Gamma.overlay.show();
 			
 			if( Gamma.settings.overlayAnimated && anim && Gamma.supportTransitions ) {
@@ -1107,7 +1107,6 @@ var Gamma = (function() {
 				_saveState();
 
 			}, 25 );
-
 		},
 		// the slideshow is active only if the page is visible
 		_visChange = function() {

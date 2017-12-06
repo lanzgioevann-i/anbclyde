@@ -338,13 +338,6 @@ main{
 }
 
 /**************
-	INSTAFEED
-**************/
-.ig-image{
-	overflow: hidden;
-}
-
-/**************
 	PRICING
 **************/
 @media only screen and (max-width: 600px) {
@@ -500,14 +493,9 @@ main{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-.ig-feed-pic{
-	padding: 0 !important;
-	margin: 0 !important;
-}
-.ig-feed-pic img{
-   overflow:hidden;
-	width: 100% !important;
-	height: auto !important;
+
+#footer{
+	padding-top: 50px;
 }
 
 .footer-copyright{
