@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		
+		<title id="web-title"></title>
 		<link href="../../img/icon.png" rel="icon">
-		
 		
 		<!-- GAMMA -->
 		<noscript><link rel="stylesheet" type="text/css" href="../../css/gallery/noJS.css"/></noscript>
@@ -22,7 +22,9 @@
         <link rel="stylesheet" type="text/css" href="../../css/materialize.css"/>
 		<link rel="stylesheet" href="../../css/font-awesome.min.css">
 		
-		<title id="web-title"></title>
+		<!-- IG FEED -->
+		<script type="text/javascript" src="../../js/instafeed.min.js"></script>
+		
 		<script>
 			/* CONFIG */
 			var gallery_type = 'engagements'; //gallery type, (weddings,engagements,casuals)
@@ -36,10 +38,9 @@
 			document.getElementById("web-title").innerHTML = gallery_title + ' | Above & Beyond'; //dont  change
 		</script>
 		
-		<script type="text/javascript" src="../../js/instafeed.min.js"></script>
     </head>
     <body>
-		
+	
 		<header>
 			
 			<!-- HEADER -->
@@ -155,27 +156,34 @@
 						currentCount = 0;
 						var userFeed = new Instafeed({
 							get: 'user',
-							userId: '6679769289',
-							clientId: '9afb597803744903aaca0549e4d48b4c',
-							accessToken: '6679769289.9afb597.9b41503d36e64c0283da3f23a20b0893',
+							userId: '5508459097',
+							clientId: '7ff6abbdde2c4729be1b90bb9c2815f2',
+							accessToken: '5508459097.7ff6abb.d1b4a84af5a84155b7126fd8871c25bf',
+							
+							//resonanceznal
+							//userId: '6679769289',
+							//clientId: '9afb597803744903aaca0549e4d48b4c',
+							//accessToken: '6679769289.9afb597.9b41503d36e64c0283da3f23a20b0893',
+							//lazy
 							//userId: '441261446',
 							//clientId: ' 2ef18e5db3644483ad67c22cd212d13e',
 							//accessToken: '441261446.2ef18e5.6088c146db284029b022af658bc25e89',
+							
 							resolution: 'standard_resolution',
 							template: '<div class="col s12 m3 port-img ig-image" style="background: url({{image}}) 50% 50% no-repeat; height: 40vh; background-size: cover; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover;"><a href="{{link}}" class="port-img-hover center"><span><p class=""><i class="fa fa-heart" aria-hidden="true"></i> {{likes}} &bull; <i class="fa fa-comment" aria-hidden="true"></i> {{comments}}</p></span></a></div>',
 							limit: 60,
 							links: false,
-							sortBy: 'most-recent',
+							sortBy: 'most-liked',
 							filter: function(image) {
-								console.log(image.tags);
+								console.log(image);
 
 								var shouldDisplay = (currentCount < 4);
-								
+								/*
 								//filter tags
 								var tag1 = 'test';
 								var tag2 = 'anb';
 								var tag3 = 'site';
-
+								
 								if(shouldDisplay){
 									if(image.tags.indexOf(tag2) >= 0 && image.tags.indexOf(tag3) >= 0){
 										currentCount += 1;
@@ -184,14 +192,15 @@
 										shouldDisplay = false;
 									}
 								}
-								/*if (shouldDisplay) {
-									if (image.likes.count >= 0) {
+								*/
+								if (shouldDisplay) {
+									if (image.likes.count >= 30) {
 										currentCount += 1;
 									} else {
 										shouldDisplay = false;
 									}
-								}*/
-
+								}
+								
 								return shouldDisplay;
 							}
 						});
@@ -301,9 +310,9 @@
 						<div class="container grey-text hide-on-small-only">
 							<span class="left copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Above and Beyond</span>
 							<span class="right">
-								<a class="grey-text text-darken-4 social-foot" href="https://www.facebook.com/AboveAndBeyondBC" target="_new"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-								<a class="grey-text text-darken-4 social-foot" href="https://www.instagram.com/aboveandbeyondbc/" target="_new"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								<a class="grey-text text-darken-4 social-foot" href="https://www.youtube.com/channel/UCTLus49_DbVKa6whKewjV4Q/featured" target="_new"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+								<a class="grey-text social-foot" href="https://www.facebook.com/AboveAndBeyondBC" target="_new"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a class="grey-text social-foot" href="https://www.instagram.com/aboveandbeyondbc/" target="_new"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a class="grey-text social-foot" href="https://www.youtube.com/channel/UCTLus49_DbVKa6whKewjV4Q/featured" target="_new"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
 							</span>
 						</div>
 						
@@ -311,9 +320,9 @@
 							<span class=" copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Above and Beyond</span>
 							<br>
 							<span class="">
-								<a class="grey-text text-darken-4 social-foot" href="https://www.facebook.com/AboveAndBeyondBC" target="_new"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-								<a class="grey-text text-darken-4 social-foot" href="https://www.instagram.com/aboveandbeyondbc/" target="_new"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								<a class="grey-text text-darken-4 social-foot" href="https://www.youtube.com/channel/UCTLus49_DbVKa6whKewjV4Q/featured" target="_new"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+								<a class="grey-text social-foot" href="https://www.facebook.com/AboveAndBeyondBC" target="_new"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a class="grey-text social-foot" href="https://www.instagram.com/aboveandbeyondbc/" target="_new"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a class="grey-text social-foot" href="https://www.youtube.com/channel/UCTLus49_DbVKa6whKewjV4Q/featured" target="_new"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
 							</span>
 						</div>
 					</div>
