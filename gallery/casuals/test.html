@@ -339,8 +339,10 @@
 			$('body').css('-o-background-size', 'cover');
 			$('body').css('background-size', 'cover');
 		</script>
-		<script>
-			$('#navbar-placeholder').load('../navbar.html #navbar-main');
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#navbar-placeholder').load('../navbar.txt');
+			});
 		</script>
 	</body>
 </html>
