@@ -27,11 +27,11 @@
 		
 		<script>
 			/* CONFIG */
-			var gallery_type = 'weddings'; //gallery type, (weddings,engagements,casuals)
-			var gallery_name = 'ahmed-fatima'; //the folder name at root/img/gallery/(gallery-type)/name of gallery folder
-			var number_of_images = 137; // dont include 'header.jpg' in the count
+			var gallery_type = 'casuals'; //gallery type, (weddings,engagements,casuals)
+			var gallery_name = 'view'; //the folder name at root/img/gallery/(gallery-type)/name of gallery folder
+			var number_of_images = 10; // dont include 'header.jpg' in the count
 			
-			var gallery_title = 'Ahmed & Fatima';
+			var gallery_title = 'View';
 			
 			/* CONFIG */
 			
@@ -56,49 +56,8 @@
 			</div>
 			
 			<!-- NAV BAR -->
-			<nav id="navbar-main" class="z-depth-0">
-				<div class="nav-wrapper">
-					
-					<!-- tablet above -->
-					<div class="hide-on-small-only hide-on-below-800px">
-						<a href="#ss-home" id="" class="brand-logo grey-text center"><img src="../../img/nav-logo.png"></a>
-						
-						<div id="nav-links" class="nav-center">
-							<ul id="nav-mobile" class="center hide-on-small-only">
-								<li><a href="../list.html#ss-engagements" class="navbar-main-links white-text left ">ENGAGEMENTS</a></li>
-								<li><a href="../list.html#ss-weddings" class="navbar-main-links white-text left ">WEDDINGS</a></li>
-								
-								<li><a href="../list.html#ss-casuals" class="navbar-main-links white-text right ">CASUAL</a></li>
-								<li><a href="../list.html" class="navbar-main-links white-text right ">GALLERY</a></li>
-								<li><a href="http://www.aboveandbeyondpro.com/" class="navbar-main-links white-text right">HOME</a></li>
-							</ul>
-						</div>
-					</div>
-				
-				
-					<!-- small devices -->
-					<div class="hide-on-med-and-up show-on-above-800px">
-						<a href="#ss-home" class="brand-logo left"><img src="../../img/nav-logo-mini.png"></a>
-						<!-- Dropdown Works -->
-						<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile">
-							<li><a href="http://www.aboveandbeyondpro.com/" class="white-text" target="_parent">HOME</a></li>
-							<li><a href="../list.html" class="white-text" target="_parent">GALLERY</a></li>
-							<li><a href="../list.html#ss-engagements" class="white-text" target="_parent">ENGAGEMENTS</a></li>
-							<li><a href="../list.html#ss-weddings" class="white-text" target="_parent">WEDDINGS</a></li>
-							<li><a href="../list.html#ss-casuals" class="white-text" target="_parent">CASUAL SHOOTS</a></li>
-							<li><a href="#ss-contact" class="white-text" target="_parent">CONTACT US</a></li>
-						</ul>
-						
-						<ul id="nav-mobile" class="right">
-							<li>
-								<a href="#" data-activates="ddSmallDevice" data-beloworigin="true" class="navbar-main-links white-text dropdown-button"><i class="fa fa-bars" aria-hidden="true"></i></a>
-							</li>
-						</ul>
-					</div>
-					
-				</div>
-			</nav>
-		
+			<div id="navbar-placeholder"></div>
+			
 		</header>
 		
 		<main class="white scrollspy" id="ss-main">
@@ -108,7 +67,6 @@
 			<div class="container">
 					
 				<h4 id="heading-title" class="center"></h4>
-				
 				
 			</div>
 			<br>
@@ -375,13 +333,14 @@
 		<script>
 			document.getElementById("heading-title").innerHTML = gallery_title;
 			
-			
 			$('body').css('background', 'url(../../img/gallery/' + gallery_type + '/' + gallery_name +'/header.jpg) center center no-repeat fixed');
 			$('body').css('-webkit-background-size', 'cover');
 			$('body').css('-moz-background-size', 'cover');
 			$('body').css('-o-background-size', 'cover');
 			$('body').css('background-size', 'cover');
 		</script>
-		
+		<script>
+			$('#navbar-placeholder').load('view.html #navbar-main');
+		</script>
 	</body>
 </html>

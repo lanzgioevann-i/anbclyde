@@ -32,9 +32,10 @@
 			var number_of_images = 34; // dont include 'header.jpg' in the count
 			
 			var gallery_title = 'Alex & Eleanor';
-			var gallery_description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus et metus sollicitudin, egestas ipsum eget, aliquet lectus. Praesent et velit ac ligula aliquet egestas ut eu est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus hendrerit varius. Suspendisse consequat dictum dui, nec elementum metus commodo.';
+			
 			/* CONFIG */
 			
+			gallery_dir = ''; //'/' if live, '' if offline test
 			document.getElementById("web-title").innerHTML = gallery_title + ' | Above & Beyond'; //dont  change
 		</script>
 		
@@ -64,12 +65,12 @@
 						
 						<div id="nav-links" class="nav-center">
 							<ul id="nav-mobile" class="center hide-on-small-only">
-								<li><a href="../../gallery.html#ss-engagements" class="navbar-main-links white-text left ">ENGAGEMENTS</a></li>
-								<li><a href="../../gallery.html#ss-weddings" class="navbar-main-links white-text left ">WEDDINGS</a></li>
+								<li><a href="../list.html#ss-engagements" class="navbar-main-links white-text left ">ENGAGEMENTS</a></li>
+								<li><a href="../list.html#ss-weddings" class="navbar-main-links white-text left ">WEDDINGS</a></li>
 								
-								<li><a href="../../gallery.html#ss-casuals" class="navbar-main-links white-text right ">CASUAL</a></li>
-								<li><a href="../../gallery.html" class="navbar-main-links white-text right ">GALLERY</a></li>
-								<li><a href="../../index.html" class="navbar-main-links white-text right">HOME</a></li>
+								<li><a href="../list.html#ss-casuals" class="navbar-main-links white-text right ">CASUAL</a></li>
+								<li><a href="../list.html" class="navbar-main-links white-text right ">GALLERY</a></li>
+								<li><a href="http://www.aboveandbeyondpro.com/" class="navbar-main-links white-text right">HOME</a></li>
 							</ul>
 						</div>
 					</div>
@@ -80,11 +81,11 @@
 						<a href="#ss-home" class="brand-logo left"><img src="../../img/nav-logo-mini.png"></a>
 						<!-- Dropdown Works -->
 						<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile">
-							<li><a href="../../index.html" class="white-text" target="_parent">HOME</a></li>
-							<li><a href="../../gallery.html" class="white-text" target="_parent">GALLERY</a></li>
-							<li><a href="../../gallery.html#ss-engagements" class="white-text" target="_parent">ENGAGEMENTS</a></li>
-							<li><a href="../../gallery.html#ss-weddings" class="white-text" target="_parent">WEDDINGS</a></li>
-							<li><a href="../../gallery.html#ss-casuals" class="white-text" target="_parent">CASUAL SHOOTS</a></li>
+							<li><a href="http://www.aboveandbeyondpro.com/" class="white-text" target="_parent">HOME</a></li>
+							<li><a href="../list.html" class="white-text" target="_parent">GALLERY</a></li>
+							<li><a href="../list.html#ss-engagements" class="white-text" target="_parent">ENGAGEMENTS</a></li>
+							<li><a href="../list.html#ss-weddings" class="white-text" target="_parent">WEDDINGS</a></li>
+							<li><a href="../list.html#ss-casuals" class="white-text" target="_parent">CASUAL SHOOTS</a></li>
 							<li><a href="#ss-contact" class="white-text" target="_parent">CONTACT US</a></li>
 						</ul>
 						
@@ -107,7 +108,7 @@
 			<div class="container">
 					
 				<h4 id="heading-title" class="center"></h4>
-				<p id="heading-description" class="center-align"></p>
+				
 				
 			</div>
 			<br>
@@ -131,7 +132,7 @@
 						//alert(gallery_name);
 						var htmlElements = '';
 						for (var i = 1; i <= number_of_images; i++) {
-						   htmlElements += '<li><div data-description="<h3>' + gallery_title + '</h3>"><div data-src="../../img/gallery/' + gallery_type + '/' + gallery_name + '/' + i + '.jpg"></div><noscript><img src="../../img/gallery/' + gallery_type + '/' + gallery_name + '/' + i + '.jpg"/></noscript></div></li>';
+						   htmlElements += '<li><div data-description="<h3>' + gallery_title + '</h3>"><div data-src="' + gallery_dir + '../../img/gallery/' + gallery_type + '/' + gallery_name + '/' + i + '.jpg"></div><noscript><img src="' + gallery_dir + '../../img/gallery/' + gallery_type + '/' + gallery_name + '/' + i + '.jpg"/></noscript></div></li>';
 						}
 						var container = document.getElementById("gallery-content");
 						container.innerHTML = htmlElements;
@@ -216,7 +217,7 @@
 								<div class="center-when-small"><span class="contact-title">Get In Touch!</span></div>
 								
 								<div class="contact-content contact-border center-when-small grey-text">
-									<span><i class="fa fa-map-marker" aria-hidden="true"></i> 714637 109 Ave Surrey<br>British Columbia</span><br>
+									<span><i class="fa fa-map-marker" aria-hidden="true"></i> 14637 109ave Surrey<br>British Columbia</span><br>
 									<br>
 									<span><i class="fa fa-phone" aria-hidden="true"></i> 778-332-5796</span><br>
 									<span><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:aboveandbeyond.ca@gmail.com?Subject=Mail From Site">aboveandbeyond.ca@gmail.com</a></span><br>
@@ -373,7 +374,7 @@
 		<script src="../../js/gallery/functions.js"></script>
 		<script>
 			document.getElementById("heading-title").innerHTML = gallery_title;
-			document.getElementById("heading-description").innerHTML = gallery_description;
+			
 			
 			$('body').css('background', 'url(../../img/gallery/' + gallery_type + '/' + gallery_name +'/header.jpg) center center no-repeat fixed');
 			$('body').css('-webkit-background-size', 'cover');

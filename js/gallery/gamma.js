@@ -378,7 +378,8 @@ var Gamma = (function() {
 				History.pushState( null, null, '?id=' + id );
 			
 			}
-		
+			
+			document.getElementById("web-title").innerHTML = gallery_title + ' | Above & Beyond'; //dont  change //tangina
 		},
 		// transform initial html structure into a list of images (well mostly)
 		_layout = function( $items ) {
@@ -783,7 +784,6 @@ var Gamma = (function() {
 			Gamma.current = id;
 
 			// transition: overlay opacity
-			document.getElementById("web-title").innerHTML = gallery_title + ' | Above & Beyond';
 			Gamma.overlay.show();
 			
 			if( Gamma.settings.overlayAnimated && anim && Gamma.supportTransitions ) {
@@ -1105,7 +1105,7 @@ var Gamma = (function() {
 				}
 
 				_saveState();
-
+				
 			}, 25 );
 		},
 		// the slideshow is active only if the page is visible

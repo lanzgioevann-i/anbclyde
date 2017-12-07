@@ -351,12 +351,14 @@ main{
   GALLERY SPEC
 ***************/
 .gallery {
-	
+	padding-top: 50px;
 }
 .gallery-header  {
 	letter-spacing: 5px;
 	text-transform: uppercase;
+	padding-bottom: 10px;
 }
+
 .gallery-header span {
 	font-size: 0.8em;
 	letter-spacing: 5px;
@@ -365,8 +367,6 @@ main{
 
 .gallery-body {
 	padding: 20px;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 
