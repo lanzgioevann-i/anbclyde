@@ -1,0 +1,16 @@
+﻿
+.come-in {
+  opacity: 0;
+  animation: come-in 0.3s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 2s;
+}
+.already-visible {
+  opacity: 100;
+  animation: none;
+}
+
+@keyframes come-in {
+  to { opacity: 100; }
+}
