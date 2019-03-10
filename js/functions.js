@@ -10,28 +10,19 @@
 }
 
 jQuery(document).ready(function($){
-	// Defining a function to set size for #header 
     function fullscreen(){
-        jQuery('#header-container').css({
+        jQuery('#hero').css({
             width: jQuery(window).width(),
             height: jQuery(window).height()
         });
     }
-  
+
     fullscreen();
 
-	// Run the function in case of window resize
-	jQuery(window).resize(function() {
-		fullscreen();         
-	});
-
-	//Mobile Browser Fix (Chrome's Address bar)
-	if ($('body').hasClass('mobile')) {
-		var viewportHeight = $('#header-container').innerHeight();
-		$('#header-container').css({ height: viewportHeight });
-	}
-
-});
+    jQuery(window).resize(function() {
+        fullscreen();
+    })
+})
 
 
 var w = window.innerWidth;
