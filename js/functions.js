@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
     })
 })
 
-/*
+
 var w = window.innerWidth;
 var h = window.innerHeight;
 var o = 'landscape';
@@ -37,7 +37,7 @@ else{
     o = 'portrait'
 }
 
-$('body').css('background', 'url(img/cover/' + o + '/1.jpg) center center no-repeat');
+$('body').css('background', 'url(https://lazygeniuslanz.github.io/anbclyde/img/cover/' + o + '/1.jpg) center center no-repeat');
 $('body').css('-webkit-background-size', 'cover');
 $('body').css('-moz-background-size', 'cover');
 $('body').css('-o-background-size', 'cover');
@@ -46,4 +46,3 @@ $('body').css('background-attachment', 'fixed');
 
 var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 if(iOS) $('body').css('background-attachment', 'fixed');
-*/
