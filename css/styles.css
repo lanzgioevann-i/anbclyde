@@ -7,7 +7,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	overflow-x:hidden;
 	
-	background: url(../img/index-header.jpg) center center no-repeat fixed;
+	background: url('https://lazygeniuslanz.github.io/Puppies/img/cover/landscape/1.jpg') center center no-repeat fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
