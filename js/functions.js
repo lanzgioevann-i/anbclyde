@@ -9,25 +9,41 @@
     }
 }
 
+jQuery(document).ready(function($){
+    function fullscreen(){
+        jQuery('#hero').css({
+            width: jQuery(window).width(),
+            height: jQuery(window).height()
+        });
+    }
+
+    fullscreen();
+
+    jQuery(window).resize(function() {
+        fullscreen();
+    })
+})
+
+/*
 var w = window.innerWidth;
-    var h = window.innerHeight;
-    var o = 'landscape';
-    var i = 1;
+var h = window.innerHeight;
+var o = 'landscape';
+var i = 1;
 
-    if(w >= h){
-        o = 'landscape'
-    }
-    else{
-        o = 'portrait'
-    }
-    
-    $('body').css('background', 'url(img/cover/' + o + '/1.jpg) center center no-repeat');
-    $('body').css('-webkit-background-size', 'cover');
-    $('body').css('-moz-background-size', 'cover');
-    $('body').css('-o-background-size', 'cover');
-    $('body').css('background-size', 'cover');
-    $('body').css('background-attachment', 'fixed');
+if(w >= h){
+    o = 'landscape'
+}
+else{
+    o = 'portrait'
+}
 
-    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-    if(iOS) $('body').css('background-attachment', 'fixed');
-	
+$('body').css('background', 'url(img/cover/' + o + '/1.jpg) center center no-repeat');
+$('body').css('-webkit-background-size', 'cover');
+$('body').css('-moz-background-size', 'cover');
+$('body').css('-o-background-size', 'cover');
+$('body').css('background-size', 'cover');
+$('body').css('background-attachment', 'fixed');
+
+var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if(iOS) $('body').css('background-attachment', 'fixed');
+*/
