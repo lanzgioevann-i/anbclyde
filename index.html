@@ -20,6 +20,34 @@
 	</head>
 
 	<body>
+
+        <!-- NAV BAR -->
+        <nav class="navbar navbar-expand-md" id="mainnav">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="img/logo.jpg" class="img-fluid" width="50" /></a>
+                <h1 class="nav-link white-text font-bebas m-0 p-0 nav-font-color">ROMA INDUSTRIES</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" onclick="navToggle()">
+                    <i class="fas fa-bars nav-font-color white-text" id="nav-hamburger"></i>
+                </button>
+                <div class="navbar-collapse collapse justify-content-stretch pl-1" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link under-link nav-font-color white-text" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link under-link nav-font-color white-text" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link under-link nav-font-color white-text" href="#contact-us">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link under-link nav-font-color white-text" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
 		<!-- HEADER -->
         <div id="header-container">
             <div class="scrollspy" id="ss-home">
@@ -31,8 +59,253 @@
             </div>
         </div>	
 
-        <div style="min-height: 300vh; background-color: white;"></div>
-		
+        <div id="navline"></div>
+
+        <!-- CAROUSEL -->
+        <div class="pt-5 white" id="about-us">
+            <div class="container">
+                <div class="container">
+                    <div id="intro-carousel" class="carousel slide" data-ride="carousel">
+
+                        <!--<ol class="carousel-indicators">
+                            <li data-target="#intro-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#intro-carousel" data-slide-to="1"></li>
+                        </ol>-->
+
+                        <div class="carousel-inner" data-touch="true">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-5">
+                                        <img src="img/scrolling1.jpg" class="img-fluid" alt="Lanz">
+                                    </div>
+                                    <div class="col-sm-12 col-md-7 pt-4">
+                                        <h1 class="font-quicksand">History of Dedication</h1>
+                                        <br />
+                                        <p class="lead">This is a story of success that is now entering into its third generation. The history of the past, present and future from a brilliant and industrious Filipino family situated in the region of Laguna stands proudly behind the brand name. Its indisputable success and development started from just a small idea and a dream. The Company has developed so successfully thanks to the extraordinary daily commitment from every member of its workforce.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-5">
+                                        <img src="img/scrolling2.jpg" class="img-fluid" alt="Lanz">
+                                    </div>
+                                    <div class="col-sm-12 col-md-7 pt-4">
+                                        <h1 class="font-quicksand">Always going Above & Beyond</h1>
+                                        <br />
+                                        <p class="lead">Since its establishment, in 1976, the company has been driven by its passion for excellence and by employee dedication. A spirit of loyalty and professionalism is the foundation upon which our staff conduct their dealings with consumers, communities, institutions and business partners.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTS  -->
+        <div class="products py-5 white" id="products">
+            <div class="container-fluid">
+
+                <div class="card-columns">
+
+                    <div class="card slidein">
+                        <img src="img/macapuno.jpg" class="card-img-top" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Macapuno</h5>
+                            <p class="card-text">Obtained from the rare coconut sport found only in the tropics, the strips have been carefully cooked to satisfy your sweet longings. Enjoy how it melts in your mouth or add that luscious note to your ice cream and sherbets.  Or simply  drool how its natural sweetness provides the perfect fillings to your cakes and pastries.  ​</p>
+                        </div>
+                    </div>
+
+                    <div class="card slidein">
+                        <img src="img/natadecoco.jpg" class="card-img-top" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nata de Coco</h5>
+                            <p class="card-text">A fibrous and low calorie concoction from the coconut milk that brings a delightful chewy experience to your dessert selection. Used in fruit salads, cocktails, sherbets and ice creams. It also provides that interesting twist to cold soup and other gourmet food. Or simply chill in its syrup for that healthy, guiltless and pure dessert you'd surely love to go back to.​</p>
+                        </div>
+                    </div>
+
+                    <div class="card slidein">
+                        <img src="img/ube.jpg" class="card-img-top" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ube</h5>
+                            <p class="card-text">Is a comminuted product prepared from sound and clean purple yam tubers. This is cooked to a suitable consistency. Perfect as filling for cakes and pastries or as an interesting complement to your dessert, salad and fruit concoctions. Or simply scoop out that sweet goodness from the bottle.</p>
+                        </div>
+                    </div>
+
+                    <div class="card slidein">
+                        <img src="img/beans.jpg" class="card-img-top" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Beans</h5>
+                            <p class="card-text">The beans have been soaked in syrup to satisfy your sweet longings.  Add it to other tropical desserts for a delectable mix best served with crushed ice and milk.  </p>
+                        </div>
+                    </div>
+
+                    <div class="card slidein">
+                        <img src="img/redmongo.jpg" class="card-img-top" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Mongo</h5>
+                            <p class="card-text">The beans have been soaked in syrup to satisfy your sweet longings. Add it to other tropical desserts for a delectable mix best served with crushed ice and milk.  </p>
+                        </div>
+                    </div>
+
+                    <div class="card slidein">
+                        <img src="img/langka.jpg" class="card-img-top" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Langka</h5>
+                            <p class="card-text">Sun-ripened and carefully punched from the fruit, the tender pieces have been cooked in mild syrup to bring out the exquisite taste of the jackfruit. Perfect as filling for cakes and pastries or as an interesting complement to your dessert, salad and fruit concoctions. Or simply scoop out that sweet goodness from the bottle.</p>
+                        </div>
+                    </div>
+
+                    <div class="card slidein">
+                        <img src="img/kaong.jpg" class="card-img-top" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Kaong</h5>
+                            <p class="card-text">A fibrous and low calorie concoction from the coconut milk that brings a delightful chewy experience to your dessert selection. Used in fruit salads, cocktails, sherbets and ice creams. It also provides that interesting twist to cold soup and other gourmet food. Or simply chill in its syrup for that healthy, guiltless and pure dessert you'd surely love to go back to.​</p>
+                        </div>
+                    </div>
+
+                    <div class="card slidein">
+                        <img src="img/garbanzos.jpg" class="card-img-top" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Garbanzos</h5>
+                            <p class="card-text">Add this dessert to your delectable mix of tropical desserts and serve with crushed ice and milk to quench cool gastronomic cravings. </p>
+                        </div>
+                    </div>
+
+                    <div class="card slidein">
+                        <img src="img/halohalo.jpg" class="card-img-top" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Halo halo</h5>
+                            <p class="card-text">A delectable mix of tropical desserts best served with crushed ice and milk to quench cool gastronomic cravings.​</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="white pb-5">
+            <div class="container text-center">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xoLPVGgGCF0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CONTACT US -->
+        <div class="container-fluid transparent py-3" id="contact-us">
+            <div class="row">
+                <div class="col">
+                    <div class="contact-us" style="background-color: rgba(255,255,255,0.95);">
+                        <div class="container">
+                            <div class="contact-us ">
+
+                                <div class="row pt-4">
+                                    <div class="col-sm-12 col-md-6 offset-md-3 text-center">
+                                        <div class="">
+                                            <h1 class="display-3"><i class="fas fa-envelope-open"></i></h1><h4 class="display-4">Drop A Message</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container p-5">
+                                    <form id="gform" method="post" enctype="text/plain" action="https://script.google.com/macros/s/AKfycbwTAHZIJWeM4A0Yo3tm_AnshnOaEm9fWl0x0X9OuNyVtlOcd5Q/exec">
+                                        <div class="form-row">
+                                            <div class="col-sm-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email Address" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Full Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="txtContact"  name="txtContact" placeholder="Contact Number" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" id="txtMessage" name="txtMessage"  placeholder="Message" style="box-sizing: border-box; height: 100%; min-height: 20vh;" required></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-4">
+                                            <div class="col text-center">
+                                                <button type="submit" class="btn grey darken-4 white-text">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div style="display:none;" class="text-center" id="return-message">
+										<h6 class="grey-text">Your email has been sent. Your message is greatly appreciated. Please wait for further reply. <br /> For sending another message, please refresh the page. <br /> Thank you!</h6>
+									</div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer" style="background-color: rgb(10, 10, 10)">
+            <div class="container py-4">
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="row ">
+                            <div class="col-sm-5">
+                                <img src="img/logo.jpg" class="img-fluid float-md-right float-sm-center rounded"/>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="grey-text ">
+                                    <h4 class="">Roma Industries</h4>
+                                    <p>Proudly owned and managed by Danilo Capistrano & Family</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <ul class="list-unstyled">
+                            <li class="list-item"><a href="#products" class="grey-text">Products</a></li>
+                            <li class="list-item"><a href="#contact-us" class="grey-text">Contact Us</a></li>
+                            <li class="list-item"><a href="#about-us" class="grey-text">About Us</a></li>
+                            <li class="list-item"><a href="https://www.facebook.com/RomaIndustries/" class="grey-text"  target="_blank">Facebook</a></li>
+                            <li class="list-item"><a href="https://www.instagram.com/romaindustries/" class="grey-text"  target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div id="googlemap"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container p-2">
+                <div class="row align-items-center">
+                    <div class="col text-center text-darken-1 grey-text">
+                        <i class="far fa-copyright"></i> 2019 Roma Industries
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
         <!--SCRIPTS-->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
